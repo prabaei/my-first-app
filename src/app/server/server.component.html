@@ -1,1 +1,4 @@
-<p>Server components</p>
+<p>{{ 'Server'}} with serverID {{serverId}} is in state {{serverName}} ---{{getServerID()}}</p>
+<button class="btn btn-primary" [disabled]="!EnableButton">Test</button>
+<button (click)="turnonserver()">On</button>
+<p>{{serverCondition}}</p>
