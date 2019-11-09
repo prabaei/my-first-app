@@ -1,0 +1,9 @@
+<p>assignmentthree works!</p>
+<button (click)="logClick()">toggleButton</button>
+<p>{{btn_toggle}}</p>
+<p *ngIf="btn_toggle; else elsePart">This is not going to happen</p>
+<ng-template #elsePart>
+    <p>hi this is else</p>
+</ng-template>
+
+<p *ngFor="let ti of logTime" [ngStyle]="{backgroundColor:ti>4?'green':'red'}">a</p>

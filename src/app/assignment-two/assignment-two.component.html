@@ -1,0 +1,7 @@
+<p>assignment-two works!</p>
+
+
+<input [(ngModel)]="usernameTest" placeholder="Name" />
+<label>{{usernameTest}}</label>
+<br>
+<button class="btn btn-primary" (click)="resetUserName()" [disabled]="usernameTest.length==0">Reset</button>
